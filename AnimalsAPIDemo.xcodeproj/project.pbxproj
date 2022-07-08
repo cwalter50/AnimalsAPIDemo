@@ -13,6 +13,7 @@
 		83C05FEC287896FF00B0A58C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C05FEA287896FF00B0A58C /* Main.storyboard */; };
 		83C05FEE287896FF00B0A58C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83C05FED287896FF00B0A58C /* Assets.xcassets */; };
 		83C05FF1287896FF00B0A58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83C05FEF287896FF00B0A58C /* LaunchScreen.storyboard */; };
+		83C05FFA28789C8300B0A58C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 83C05FF928789C8300B0A58C /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83C05FFA28789C8300B0A58C /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AnimalsAPIDemo;
+			packageProductDependencies = (
+				83C05FF928789C8300B0A58C /* SDWebImage */,
+			);
 			productName = AnimalsAPIDemo;
 			productReference = 83C05FE1287896FE00B0A58C /* AnimalsAPIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 83C05FD8287896FE00B0A58C;
+			packageReferences = (
+				83C05FF828789C8300B0A58C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 83C05FE2287896FE00B0A58C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83C05FF828789C8300B0A58C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83C05FF928789C8300B0A58C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C05FF828789C8300B0A58C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83C05FD9287896FE00B0A58C /* Project object */;
 }
