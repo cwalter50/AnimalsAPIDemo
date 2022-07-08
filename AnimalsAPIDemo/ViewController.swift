@@ -9,10 +9,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    @IBOutlet weak var myImageView: UIImageView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        displayLabel.text = ""
+      
     }
+    
+    @IBAction func buttonTapped(_ sender: UIButton)
+    {
+        
+        let urlString = "https://zoo-animal-api.herokuapp.com/animals/rand"
+        
+  
+        
+    }
+    
 
 
 }
